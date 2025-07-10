@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>City of Fort Worth | Official Site</title>
+
+  <!-- Google Translate Widget -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,es,vi,zh-CN,ar', // English, Spanish, Vietnamese, Chinese, Arabic
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Fonts, Icons, Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lora&display=swap" rel="stylesheet">
+  <script defer src="js/script.js"></script>
+</head>
+
+
+<body>
+
+  <!-- Alert Banner -->
+  <section class="alert-banner" id="alertBanner">
+    <p>⚠️ Severe Thunderstorm Warning – Shelter in Place</p>
+    <button id="dismissAlert">×</button>
+  </section>
+
+  <!-- Restore Alert Placeholder -->
+  <div id="restoreContainer"></div>
+
+  <!-- Header -->
+  <header class="top-header alert-visible">
+    <div class="header-content">
+
+      <!-- Left: Logo -->
+      <div class="header-left">
+        <div class="logo">
+          <img src="img/logo.png" alt="City of Fort Worth Logo" class="fw-logo" />
+        </div>
+
+        <!-- Desktop Nav (visible on large screens) -->
+        <ul class="nav-links">
+          <li><a href="#about">About the City</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#news-events">News & Events</a></li>
+          <li><a href="#departments">Departments</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Right: Search + Mobile Toggle -->
+      <div class="header-tools">
+        <div class="search-bar">
+          <input type="text" placeholder="Search Anything About Your City" aria-label="Search">
+          <button>Search</button>
+        </div>
+
+        <!-- Hamburger Menu Icon (Mobile) -->
+        <button class="nav-toggle" id="navToggle" aria-label="Open Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Slide-in Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeMenu" aria-label="Close Menu">×</button>
+    <ul>
+      <li><a href="#about">About the City</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#news-events">News & Events</a></li>
+      <li><a href="#departments">Departments</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </div>
+
+ <!-- Hero Section -->
+<section class="hero" aria-label="City Highlights">
+  <div id="google_translate_element" class="translate-widget-topright"></div>
+
+  <!-- Shared Dynamic Banner -->
+  <div class="hero-banner" id="heroBanner">
+  Welcome to Fort Worth: Proudly Serving Millions
+</div>
+
+  <div class="slider" id="imageSlider">
+    <img src="img/slide1.jpg" alt="Downtown Fort Worth view" class="slide active">
+    <img src="img/slide2.jpg" alt="Cultural district scene" class="slide">
+    <img src="img/slide3.jpg" alt="Fort Worth community event" class="slide">
+  </div>
+
+  <div class="hero-overlay">
+    <h1 id="heroHeadline">Fort Worth: Where Tradition Meets Progress</h1>
+    <nav class="cta-buttons" aria-label="Quick Links">
+      <a href="#" class="btn">Pay a Bill</a>
+      <a href="#" class="btn">Report a Problem</a>
+      <a href="#" class="btn">Trash & Recycling Schedule</a>
+    </nav>
+  </div>
+</section>
+
+
+<!-- --------------------------------------------------------------------------------- -->
+
+  <!-- How Can We Help Section -->
+  <div class="section-divider divider-services"></div>
+  <section class="services-grid" id="services" aria-label="City Services">
+    <h2><span class="swoosh"></span> HOW CAN WE HELP?</h2>
+    <p class="service-subheading">Access city services quickly and easily</p>
+    <div class="grid-container">
+      <!-- Cards -->
+      <a href="#" class="service-card" title="Connect with Fort Worth Police services and information">
+        <div class="icon-circle"><img src="img/icons/police.png" alt="Police Department" /></div>
+        <p>Police Department</p>
+      </a>
+      <a href="#" class="service-card" title="Access library resources, events, and get your card">
+        <div class="icon-circle"><img src="img/icons/library-card.png" alt="Library Services"/></div>
+        <p>Library Services</p>
+      </a>
+      <a href="#" class="service-card" title="Explore current job openings at the City of Fort Worth">
+        <div class="icon-circle"><img src="img/icons/careers.png" alt="Careers" /></div>
+        <p>Jobs</p>
+      </a>
+      <a href="#" class="service-card" title="Pay your utility bill online quickly and securely">
+        <div class="icon-circle"><img src="img/icons/water-bill.png" alt="Pay Water Bill" /></div>
+        <p>Pay Water Bill</p>
+      </a>
+      <a href="#" class="service-card" title="Report issues like potholes, streetlights, or noise">
+        <div class="icon-circle"><img src="img/icons/report.png" alt="Report an Issue" /></div>
+        <p>Report an Issue</p>
+      </a>
+      <a href="#" class="service-card" title="Adopt a pet or get help from Animal Care Services">
+        <div class="icon-circle"><img src="img/icons/animal.png" alt="Animal Shelter" /></div>
+        <p>Animal Shelter</p>
+      </a>
+      <a href="#" class="service-card" title="Apply for permits for construction, business, and more">
+        <div class="icon-circle"><img src="img/icons/permits.png" alt="Permits" /></div>
+        <p>Permits</p>
+      </a>
+      <a href="#" class="service-card" title="Pay traffic and municipal citations online">
+        <div class="icon-circle"><img src="img/icons/citation.png" alt="Pay Citation" /></div>
+        <p>Pay Citation</p>
+      </a>
+    </div>
+    <div class="all-services-wrapper">
+  <a href="#" class="view-more-btn">View All City Services</a>
+</div>
+
+  </section>
+
+  <!-- --------------------------------------------------------------------------- -->
+  
+  <!-- Upcoming Events -->
+  <div class="section-divider divider-events"></div>
+  <section class="events-section" id="news-events">
+    <div class="events-heading">
+      <h2><span class="swoosh"></span> UPCOMING EVENTS</h2>
+      <p class="section-tagline">See what’s happening in Fort Worth</p>
+    </div>
+    <div class="events-featured">
+      <!-- Featured -->
+      <div class="featured-event-box">
+        <div class="featured-date"><span class="month">Jul</span><span class="day">12</span></div>
+        <div class="featured-image-wrapper">
+          <img src="img/music.png" alt="Music & Movement in Fort Worth" />
+          <div class="featured-overlay">Location : East Regional Library</div>
+        </div>
+      </div>
+      <!-- List -->
+      <div class="event-list-compact">
+        <!-- Event Rows -->
+        <div class="event-row"><div class="event-date-box"><span class="month">Jul</span><span class="day">09</span></div><div class="event-info"><h4>City Plan Commission Meeting</h4><p><strong>Location:</strong> City Hall – Work Session Room</p><p>Subdivision plat reviews and public improvement discussions. <a href="#">Read more...</a></p></div></div>
+        <div class="event-row"><div class="event-date-box"><span class="month">Jul</span><span class="day">09</span></div><div class="event-info"><h4>Disciplinary Appeal Hearings</h4><p><strong>Location:</strong> CH_MZ10_14 Training Room</p><p>Internal hearings on personnel disciplinary appeals. <a href="#">Read more...</a></p></div></div>
+        <div class="event-row"><div class="event-date-box"><span class="month">Jul</span><span class="day">10</span></div><div class="event-info"><h4>Mayor’s Committee on Disabilities</h4><p><strong>Location:</strong> Hazel Harvey Peace Center</p><p>Public discussion on accessibility and disability support services. <a href="#">Read more...</a></p></div></div>
+        <div class="event-row"><div class="event-date-box"><span class="month">Jul</span><span class="day">10</span></div><div class="event-info"><h4>Regional Transportation Council</h4><p><strong>Location:</strong> NCTCOG, Arlington (serves Fort Worth)</p><p>Mobility planning and DFW regional project strategy. <a href="#">Read more...</a></p></div></div>
+      </div>
+    </div>
+    <div class="view-more-wrapper">
+      <a href="#" class="view-more-btn">View More Events <i class="fas fa-calendar-alt"></i></a>
+    </div>
+  </section>
+
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+  <!-- LATEST NEWS / ANNOUNCEMENTS -->
+  <div class="section-divider divider-news"></div>
+  <section class="news-section" aria-label="Latest Announcements">
+    <div class="news-heading">
+      <h2><span class="swoosh"></span> LATEST NEWS & ANNOUNCEMENTS</h2>
+     <p class="section-tagline">Updates That Impact You</p>
+
+    </div>
+    <div class="news-grid">
+      <!-- Cards -->
+      <article class="news-card"><img src="img/news1.jpg" alt="Council Budget Update" /><div class="news-content"><h3>City Council Approves FY2026 Budget</h3><p>The new budget focuses on public safety, road repairs, and expanded park services.</p><a href="#">Read More</a></div></article>
+      <article class="news-card"><img src="img/news2.jpg" alt="Library Program Launch" /><div class="news-content"><h3>Fort Worth Library Launches STEM Saturdays</h3><p>Join free workshops for kids and teens at all library branches throughout summer.</p><a href="#">Read More</a></div></article>
+      <article class="news-card"><img src="img/news3.jpg" alt="Street Repair Map" /><div class="news-content"><h3>Interactive Street Repair Map Now Live</h3><p>Track pothole repairs and resurfacing projects in your neighborhood in real time.</p><a href="#">Read More</a></div></article>
+      <article class="news-card"><img src="img/news4.jpg" alt="Fire Department Training" /><div class="news-content"><h3>Fire Department Begins New Training Academy</h3><p>New recruits are starting a 12-week intensive to improve emergency response citywide.</p><a href="#">Read More</a></div></article>
+      <article class="news-card"><img src="img/news5.jpg" alt="Community Garden Project" /><div class="news-content"><h3>New Community Garden Initiative Launches</h3><p>Residents can now apply for free starter kits to grow vegetables in public spaces.</p><a href="#">Read More</a></div></article>
+      <article class="news-card"><img src="img/news6.jpg" alt="Summer Concert Series" /><div class="news-content"><h3>Fort Worth Summer Concert Series Schedule Released</h3><p>Live music returns downtown every weekend with local and national artists.</p><a href="#">Read More</a></div></article>
+    </div>
+    <div class="view-more-wrapper">
+      <a href="#" class="view-more-btn">View More News <i class="fas fa-newspaper"></i></a>
+    </div>
+  </section>
+
+
+
+<!---------------------------------------------------------------------- -->
+<!-- Yellow Divider -->
+<div class="footer-divider"></div>
+
+<!-- Footer Section -->
+<footer class="city-footer">
+  <div class="footer-grid">
+
+    <!-- Contact Info -->
+    <section class="footer-contact">
+      <h3>Contact Us</h3>
+      <address>
+        City of Fort Worth<br>
+        200 Texas Street<br>
+        Fort Worth, TX 76102<br>
+        <a href="tel:8173921234">817-392-1234</a><br>
+        <a href="mailto:info@fortworthtexas.gov">info@fortworthtexas.gov</a>
+      </address>
+    </section>
+
+    <!-- Quick Links -->
+    <nav class="footer-links" aria-label="Quick Links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Public Information Requests</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
+    </nav>
+
+    <!-- Social Media -->
+    <section class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="X (formerly Twitter)"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer Bottom with Subscription Form -->
+  <div class="footer-bottom">
+  <form class="email-subscribe-form">
+    <input
+      type="email"
+      placeholder="Enter your Email For Latest News or Events Update"
+      required
+    />
+    <button type="submit">Subscribe</button>
+  </form>
+  <small class="footer-note">We send important city updates, not spam. Unsubscribe anytime.</small>
+<div class="footer-divider-line"></div>
+<p class="footer-copy-left">© 2025 City of Fort Worth. All rights reserved.</p>
+
+</footer>
+
+<!-- Back to Top -->
+<button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="back-to-top" aria-label="Back to top">
+  ↑ Back to Top
+</button>
+
+<script>
+  // Show/hide Back to Top button
+  window.addEventListener('scroll', function () {
+    const btn = document.getElementById('backToTop');
+    if (window.scrollY > 200) {
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none';
+    }
+  });
+</script>
+
